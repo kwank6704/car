@@ -1,9 +1,10 @@
-import styles from './card.module.css';
 import Image from 'next/image';
+import InteractiveCard from './InteractiveCard';
 
 export default function ProductCard ( { carName, imgSrc} : {carName : string,imgSrc:string}) {
+    
     return (
-        <div className = 'w-1/5 h-[300px] rounded-lg shadow-lg' >
+        <InteractiveCard contentName={carName}>
             <div className = {'w-full h-[70%] relative rounded-t-lg'}>
                 <Image src = {imgSrc}
                 alt = 'Product Picture'
@@ -15,6 +16,6 @@ export default function ProductCard ( { carName, imgSrc} : {carName : string,img
                 <h5 className='font-serif font-medium'>nice and fabulous car</h5>
                 <p className='font-serif font-medium'>Price : $2300</p>
             </div>
-        </div>
+        </InteractiveCard>
     )
 }
