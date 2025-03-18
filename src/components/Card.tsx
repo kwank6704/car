@@ -15,7 +15,7 @@ export default function ProductCard ( { carName, imgSrc ,onCompare} : {carName :
                 <h3 className='font-serif font-bold'>{carName}</h3>
                 <h5 className='font-serif font-medium'>nice and fabulous car</h5>
                 <button className='block text-sm rounded-md bg-sky-600 hover:bg-indigo-600 mx-2 px-1 py-1 text-white shadow-sm'
-                onClick={(e) => {e.stopPropagation(); onCompare(carName)}}
+                onClick={(e) => {e.stopPropagation(); e.preventDefault(); onCompare(carName)}}
                 
                 >Compare</button>
             </div>
