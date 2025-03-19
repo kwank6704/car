@@ -10,7 +10,7 @@ export default async function Car() {
     return (
         <main className = "text-center p-5">
             <h1 className =  "test-xl font-medium">Select Your Travel Partner</h1>
-            <Suspense fallback={ <p> Loading....<LinearProgress/></p>}>
+            <Suspense fallback={ <p>Loading....<LinearProgress/></p>}>
                 <CarCatalog carJson = {cars}/>
             </Suspense>
 
