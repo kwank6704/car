@@ -23,7 +23,7 @@ export default async function CarDetailPage( {params} : {params: {cid: string}} 
             className = "rounded-lg w-[30%]"/> 
             <div className='text-md mx-5 text-left'>
                 { carDetail.data.description}
-                <div className='text-md mx-5'>Doors : { carDetail.data.doors}</div>
+                <div className='text-md mx-5'>Doors: { carDetail.data.doors}</div>
                 <div className='text-md mx-5'>Seats: { carDetail.data.seats}</div>
                 <div className='text-md mx-5'>Large Bags: { carDetail.data.largebags}</div>
                 <div className='text-md mx-5'>Small Bags: { carDetail.data.smallbags}</div>
